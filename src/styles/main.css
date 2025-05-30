@@ -1,0 +1,127 @@
+:root {
+  --gura-blue: #00b0e1;
+  --gura-light-blue: #8cefff;
+  --gura-dark-blue: #0077aa;
+  --gura-white: #ffffff;
+  --gura-accent: #ff585d;
+  --gura-black: #222222;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  gap: 1.5rem;
+  background-color: var(--gura-light-blue);
+  background-image: linear-gradient(135deg, var(--gura-light-blue) 0%, var(--gura-white) 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  margin-bottom: 1rem;
+}
+
+#imagem {
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  border: 4px solid var(--gura-blue);
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 123, 255, 0.3);
+  transition: transform 0.3s ease;
+}
+
+#imagem:hover {
+  transform: scale(1.02);
+}
+
+#imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 400px;
+  align-items: center;
+}
+
+#seletor {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid var(--gura-blue);
+  border-radius: 8px;
+  background-color: var(--gura-white);
+  color: var(--gura-dark-blue);
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+}
+
+#seletor:focus {
+  border-color: var(--gura-accent);
+  box-shadow: 0 0 0 3px rgba(0, 176, 225, 0.25);
+}
+
+#seletor option {
+  background-color: var(--gura-white);
+  color: var(--gura-black);
+}
+
+#pepe, #reset {
+  width: 100%;
+  padding: 12px 15px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#pepe {
+  background-color: var(--gura-blue);
+  color: var(--gura-white);
+}
+
+#pepe:hover {
+  background-color: var(--gura-dark-blue);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.4);
+}
+
+#reset {
+  background-color: var(--gura-accent);
+  color: var(--gura-white);
+}
+
+#reset:hover {
+  background-color: #e04046;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 88, 93, 0.4);
+}
+
+.title {
+  color: var(--gura-dark-blue);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 123, 255, 0.3);
+}
+
+.shark-footer {
+  position: fixed;
+  bottom: 10px;
+  font-size: 12px;
+  color: var(--gura-dark-blue);
+  text-align: center;
+}
