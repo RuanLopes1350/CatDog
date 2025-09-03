@@ -125,3 +125,8 @@ header {
   color: var(--gura-dark-blue);
   text-align: center;
 }
+
+.shark-footer a {
+  color: var(--gura-accent);
+  text-decoration: none;
+}
