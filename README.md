@@ -4,6 +4,8 @@
 
 Este é um projeto acadêmico desenvolvido para estudo de consumo de APIs e desenvolvimento web com Vite e TypeScript. A aplicação é uma página simples que permite ao usuário visualizar imagens aleatórias de gatos ou cachorros, consumindo duas APIs públicas. Inicialmente, a página exibe uma imagem aleatória de Gawr Gura, uma personagem da Hololive, e oferece controles para alternar entre imagens de animais ou voltar à imagem inicial.
 
+[Link versão online](https://cat-dog-eight.vercel.app/)
+
 O projeto foi criado como parte de um exercício educacional para praticar conceitos de:
 - Consumo de APIs REST
 - Manipulação do DOM com TypeScript
